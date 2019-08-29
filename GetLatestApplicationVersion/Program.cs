@@ -75,7 +75,7 @@ namespace GetLatestApplicationVersion
                 MessageBox.Show("here");
                 if (highestVersion != new Version("0.0.0.0"))
                 {
-                MessageBox.Show("here1");
+                    MessageBox.Show("here1");
                     Clipboard.SetText(highestVersion.ToString());
                 }
                 MessageBox.Show("here2");
