@@ -72,17 +72,13 @@ namespace GetLatestApplicationVersion
                     highestVersion = foundProductVersion;
                 }
 
-                MessageBox.Show("here");
                 if (highestVersion != new Version("0.0.0.0"))
                 {
-                    MessageBox.Show("here1");
                     Clipboard.SetText(highestVersion.ToString());
                 }
-                MessageBox.Show("here2");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("here3");
                 Console.WriteLine($"Exception: {ex.Message}");
             }
         }
